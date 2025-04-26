@@ -1,0 +1,52 @@
+﻿body {
+}
+
+/* divheight は固定高さ 100px */
+.divheight {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* デフォルトは中央寄せ */
+}
+
+.doc-label {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px; /* タイトルと本文の間に少し余白 */
+    max-width: 100%; /* はみ出さないように */
+}
+
+/*.doc-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    -webkit-line-clamp: 2;*/ /* 最大2行まで表示 */
+    /*max-height: 3em;*/ /* 行高が1.5emなら2行で3em */
+    /*line-height: 1.5em;
+}*/
+
+.doc-text {
+    font-size:20px;
+    font-family: monospace;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    white-space: normal;
+}
+
+
+.title {
+    white-space: nowrap;
+    flex-shrink: 0; /* タイトルは縮ませない */
+}
+
+/* 上寄せする場合 */
+.divheight.top-align {
+    justify-content: flex-start;
+}
+
