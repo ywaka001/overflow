@@ -53,27 +53,40 @@
     justify-content: flex-start;
 }*/
 
+
+.divheight {
+    border: 2px solid #00fa9a;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* 初期状態：上下中央寄せ */
+}
+
+.divheight.top-align {
+    justify-content: flex-start; /* 2行以上のとき：上寄せ */
+}
+
+
 .doc-table {
+    border: 2px solid #008b8b;
     width: 100%;
     table-layout: fixed;
 }
 
 .doc-title {
-    font-family: monospace;
-    font-size: 16px;
+    border: 2px solid #191970;
     white-space: nowrap;
     vertical-align: top;
     padding-right: 8px;
-    width: 100px; /* 任意調整：タイトル幅固定推奨 */
+    width: 120px; /* 任意調整：タイトル幅固定推奨 */
 }
 
 .doc-content {
-    font-family: monospace;
-    font-size: 16px;
     vertical-align: top;
 }
 
 .doc-text {
+    border: 2px solid #ff7f50;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2; /* 2行で省略 */
@@ -83,14 +96,3 @@
     white-space: normal;
     line-height: 1.5; /* 行間は調整可能 */
 }
-
-.divheight {
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* 初期状態：上下中央寄せ */
-}
-
-    .divheight.top-align {
-        justify-content: flex-start; /* 2行以上のとき：上寄せ */
-    }

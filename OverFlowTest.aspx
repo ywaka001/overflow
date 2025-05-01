@@ -21,17 +21,13 @@
 
                 <table class="doc-table">
                     <tr>
-                        <td class="doc-title">ドキュメント：</td>
+                        <td class="doc-title">ドキュメント名：</td>
                         <td class="doc-content">
                             <asp:Label ID="Label2" runat="server" CssClass="doc-text" 
                                 Text="1行表示１２３４５６７８９０12345678901234567890１２３４５６７８９０1234567890１２３４５６７８９０1234567890１２３４５６７８９０1234567890"></asp:Label>
                         </td>
                     </tr>
                 </table>
-
-
-
-
 
 
             </div>
