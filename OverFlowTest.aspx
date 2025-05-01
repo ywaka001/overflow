@@ -13,11 +13,27 @@
     <form id="form1" runat="server">
         <div>
            <div class="divheight">
-                <div class="doc-label">
+<%--                <div class="doc-label">
                     <span class="title">ドキュメント：</span>
-<%--                    <asp:Label ID="Label1" runat="server" CssClass="doc-text" Text="2行表示１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０"></asp:Label>--%>
                     <asp:Label ID="Label2" runat="server" CssClass="doc-text" Text="1行表示１２３４５６７８９０12345678901234567890１２３４５６７８９０1234567890１２３４５６７８９０1234567890１２３４５６７８９０1234567890"></asp:Label>
-                </div>
+                </div>--%>
+
+
+                <table class="doc-table">
+                    <tr>
+                        <td class="doc-title">ドキュメント：</td>
+                        <td class="doc-content">
+                            <asp:Label ID="Label2" runat="server" CssClass="doc-text" 
+                                Text="1行表示１２３４５６７８９０12345678901234567890１２３４５６７８９０1234567890１２３４５６７８９０1234567890１２３４５６７８９０1234567890"></asp:Label>
+                        </td>
+                    </tr>
+                </table>
+
+
+
+
+
+
             </div>
             <div>test</div> 
         </div>
